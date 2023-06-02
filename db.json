@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "id": 3,
+      "name": "Product C update",
+      "price": 400,
+      "img": "anh",
+      "image": "https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/297026/vivo-v27e-tim-thumb-600x600.jpg",
+      "description": "Sản phẩm tốt"
+    },
+    {
+      "name": "Sản phảm demo 1 update",
+      "price": 50000,
+      "img": "ânhr",
+      "id": 4,
+      "image": "https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg",
+      "description": "Sản phẩm mới ra mắt 11"
+    }
+  ]
+}

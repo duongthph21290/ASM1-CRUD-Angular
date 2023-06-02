@@ -1,0 +1,26 @@
+<h1>Update Product 🔗</h1>
+<!-- #productForm="ngForm" -->
+<form (ngSubmit)="onHandleUpdate()" [formGroup]="productForm">
+    <div class="mb-3">
+        <label for="name" class="form-label">Nhập Username:</label>
+        <input type="text" formControlName="name" placeholder="Mời nhập tên..." class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label for="price" class="form-label">Nhập Price:</label>
+        <input type="number" formControlName="price" placeholder="Mời nhập giá..." class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label for="price" class="form-label">Nhập Ảnh</label>
+        <input type="text" formControlName="image" placeholder="Mời nhập ảnh..." class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label for="desc" class="form-label">Nhập Description:</label>
+        <input type="text" formControlName="description" placeholder="Mời nhập mô tả..." class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary bg-block" [disabled]="!productForm.valid">
+        Update Product
+    </button>
+</form>

@@ -1,0 +1,40 @@
+<h1>Danh sách sản phẩm 💰</h1>
+<div class="addproduct">
+  <button class="btn btn-success" routerLink="product/add">
+    Thêm sản phẩm
+  </button>
+</div>
+<div class="container">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Tên sản phẩm</th>
+        <th>Ảnh</th>
+        <th>Giá</th>
+        <th>Mô tả</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ product.name }}</td>
+        <td><img [src]="product.image" /></td>
+        <td>{{ product.price }} $</td>
+        <td>{{ product.description }}</td>
+        <td>
+          <a
+            class="btn btn-primary"
+            [routerLink]="['product', product.id, 'edit']"
+          >
+            Sửa
+          </a>
+          <button class="btn btn-danger" (click)="removeItem(product.id)!">
+            Xóa
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
